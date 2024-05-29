@@ -1,58 +1,48 @@
-<!--
- ***************************************************************************************************************************
- * Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.  See the NOTICE file *
- * distributed with this work for additional information regarding copyright ownership.  The ASF licenses this file        *
- * to you under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance            *
- * with the License.  You may obtain a copy of the License at                                                              *
- *                                                                                                                         *
- *  http://www.apache.org/licenses/LICENSE-2.0                                                                             *
- *                                                                                                                         *
- * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an  *
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the License for the        *
- * specific language governing permissions and limitations under the License.                                              *
- ***************************************************************************************************************************
--->
-
-# Apache Juneau
-
-* [Homepage](https://juneau.apache.org/)
-* [Wiki](https://github.com/apache/juneau/wiki)
-* [Javadocs](https://juneau.apache.org/site/apidocs-9.0.0/index.html)
-* [Documentation](https://juneau.apache.org/site/apidocs-9.0.0/overview-summary.html#overview.description)
-* [Pet Store App](https://github.com/apache/juneau-petstore)
-
-## Description
-
-Apache Juneau™ is a single cohesive Java ecosystem consisting of the following parts:
-
-* **juneau-marshall**	- A universal toolkit for marshalling POJOs to a variety of content types using a common framework with no external library dependencies.
-* **juneau-marshall-rdf**	- Additional support for various RDF languages.
-* **juneau-dto**	- A variety of predefined DTOs for serializing and parsing languages such as HTML5, Swagger and ATOM.
-* **juneau-config**	- A sophisticated configuration file API.
-* **juneau-rest-server**	- A universal REST server API for creating Swagger-based self-documenting REST interfaces using POJOs, simply deployed as one or more top-level servlets in any Servlet 3.1.0+ container. Includes Spring Boot and JAX-RS integration support.
-* **juneau-rest-client** - A universal REST client API for interacting with Juneau or 3rd-party REST interfaces using POJOs and proxy interfaces.
-* **juneau-rest-springboot** - Spring boot integration for juneau-rest-servlet. 
-
-Questions via email to dev@juneau.apache.org are always welcome.
-
-Juneau is packed with features that may not be obvious at first. Users are encouraged to ask for code reviews by providing links to specific source files such as through GitHub. Not only can we help you with feedback, but it helps us understand usage patterns to further improve the product.
-
-## Features
-* Fast memory-efficient serialization.
-* Fast, safe, memory-efficient parsing. Parsers are not susceptible to deserialization attacks.
-* KISS is our mantra! No auto-wiring. No code generation. No dependency injection. Just add it to your classpath and use it. Extremely simple unit testing!
-* Enjoyable to use
-* Tiny - ~1MB
-* Exhaustively tested
-* Lots of up-to-date documentation and examples
-* Minimal library dependencies:
-   * juneau-marshall, juneau-dto, juneau-svl, juneau-config - No external dependencies. Entirely self-contained.
-   * juneau-marshall-rdf - Optional RDF support. Requires Apache Jena 2.7.1+.
-   * juneau-rest-server - Any Servlet 3.1.0+ container.
-   * juneau-rest-client - Apache HttpClient 4.5+.
-* Built on top of Servlet and Apache HttpClient APIs that allow you to use the newest HTTP/2 features such as request/response multiplexing and server push.
-
-## Building
-Building requires:
-* [Apache Maven](https://maven.apache.org/)
-* Java 17 is required to build and run.
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text">
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">阿帕奇朱诺</font></font></h1><a id="user-content-apache-juneau" class="anchor" aria-label="永久链接：Apache Juneau" href="#apache-juneau"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://juneau.apache.org/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主页</font></font></a></li>
+<li><a href="https://github.com/apache/juneau/wiki"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">维基百科</font></font></a></li>
+<li><a href="https://juneau.apache.org/site/apidocs-9.0.0/index.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Javadocs</font></font></a></li>
+<li><a href="https://juneau.apache.org/site/apidocs-9.0.0/overview-summary.html#overview.description" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></a></li>
+<li><a href="https://github.com/apache/juneau-petstore"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">宠物商店应用程序</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">描述</font></font></h2><a id="user-content-description" class="anchor" aria-label="固定链接：描述" href="#description"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Apache Juneau™ 是一个单一的、有凝聚力的 Java 生态系统，由以下部分组成：</font></font></p>
+<ul dir="auto">
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">juneau-marshall</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 	- 一种通用工具包，使用通用框架将 POJO 编组为各种内容类型，无需依赖任何外部库。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">juneau-marshall-rdf</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 	- 对各种 RDF 语言的附加支持。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">juneau-dto</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 	- 用于序列化和解析 HTML5、Swagger 和 ATOM 等语言的各种预定义 DTO。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">juneau-config——</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">	一个复杂的配置文件 API。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">juneau-rest-server</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 	- 通用 REST 服务器 API，用于使用 POJO 创建基于 Swagger 的自文档化 REST 接口，只需将其部署为任何 Servlet 3.1.0+ 容器中的一个或多个顶级 servlet 即可。包括 Spring Boot 和 JAX-RS 集成支持。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">juneau-rest-client</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - 一个通用 REST 客户端 API，用于使用 POJO 和代理接口与 Juneau 或第三方 REST 接口进行交互。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">juneau-rest-springboot</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - juneau-rest-servlet 的 Spring boot 集成。</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">欢迎</font><font style="vertical-align: inherit;">通过电子邮件向</font></font><a href="mailto:dev@juneau.apache.org"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">dev@juneau.apache.org提问。</font></font></a><font style="vertical-align: inherit;"></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Juneau 包含一些乍一看可能不太明显的功能。我们鼓励用户通过提供特定源文件的链接（例如通过 GitHub）来请求代码审查。我们不仅可以帮助您提供反馈，还可以帮助您了解使用模式，从而进一步改进产品。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">特征</font></font></h2><a id="user-content-features" class="anchor" aria-label="固定链接：功能" href="#features"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速且节省内存的序列化。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速、安全、节省内存的解析。解析器不易受到反序列化攻击。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">KISS 是我们的座右铭！无需自动装配。无需代码生成。无需依赖注入。只需将其添加到您的类路径并使用它即可。极其简单的单元测试！</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用愉快</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">微小 - 约 1MB</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">经过详尽测试</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">大量最新文档和示例</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最小库依赖：
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">juneau-marshall、juneau-dto、juneau-svl、juneau-config - 无外部依赖。完全独立。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">juneau-marshall-rdf - 可选的 RDF 支持。需要 Apache Jena 2.7.1+。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">juneau-rest-server——任何 Servlet 3.1.0+ 容器。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">juneau-rest-client — Apache HttpClient 4.5+。</font></font></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">建立在 Servlet 和 Apache HttpClient API 之上，允许您使用最新的 HTTP/2 功能，例如请求/响应多路复用和服务器推送。</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">建筑</font></font></h2><a id="user-content-building" class="anchor" aria-label="固定链接：建筑" href="#building"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">建筑需要：</font></font></p>
+<ul dir="auto">
+<li><a href="https://maven.apache.org/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Apache Maven</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">构建和运行需要 Java 17。</font></font></li>
+</ul>
+</article></div>
